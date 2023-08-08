@@ -29,10 +29,10 @@ namespace RodaConsole
             roda.embarcar(2, joao, paulo); // OK: Agora o pai está junto
             roda.embarcar(3, maria); // OK: Maria já tem 12 anos e pode andar sozinha
             roda.embarcar(13, pedro); // OK: O Pedro vai sozinho
-            roda.embarcar(16, henrique);//ERRO: henrique é menor de 12 anos e não sabemos quem
-           // é o pai (deve ser o Silvio, mas ele não assumiu!)
+            roda.embarcar(16, henrique);// ERRO: henrique é menor de 12 anos e não sabemos quem é o pai (deve ser o Silvio, mas ele não assumiu!)
+            roda.embarcar(3, pedro);// ERRO: Gôndola já está ocupada
 
-
+            roda.status();
         }
     }
 }
